@@ -145,6 +145,7 @@ h6 {
   font-size: 2.0rem;
 }
 
+
 .user_btn {
   border: none !important;
   border-radius: 50px;
@@ -187,4 +188,63 @@ h6 {
 
 .user ul li {
   border-bottom: 1px dashed #6c757d;
+}
+
+#search-input {
+  display: none;
+  width: 0;
+  transition: width 0.3s;
+}
+
+/* table */
+/*Content scrollbar  start*/
+.custom-scrollbar-table {
+  overflow: auto;
+}
+
+.custom-scrollbar-table::-webkit-scrollbar {
+  width: 5px;
+  /* height: 5px; */
+}
+
+.custom-scrollbar-table::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* table start */
+
+th i {
+  color: #cdd4e0;
+  padding: 5px;
+}
+
+.icons a {
+  padding: 5px;
+}
+
+.icons .view i {
+  color: #000 !important;
+}
+
+.icons .edit i {
+  color: #d5e219 !important;
+}
+
+.icons .delete i {
+  color: #e40a0a !important;
+}
+
+td:last-child {
+  text-align: end;
+}
+
+th:last-child {
+  text-align: end;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }

@@ -268,50 +268,58 @@
             </div>
         </div>
 
-        <div class="px-4" style="margin-top: 50px;">
+        <div class="px-4 pt-4" style="margin-top: 50px;">
 
             <!-- --------------design part start------------------ -->
-            <div class="col-12">
-                <div class='row pt-2'>
-                    <div class='col-md-3 p-2'>
-                        <div class='card p-3 text-light bg-info bg-gradient'>
-                            <p><strong>Sales Order</strong></p>
-                            <p><i class='fa-solid fa-cart-shopping fa-2xl'></i> 1011001</p>
-                            <span>Sales Price</span>
-                        </div>
-                    </div>
-                    <div class='col-md-3 p-2'>
-                        <div class='card p-3 text-light bg-success bg-opacity-75'>
-                            <p><strong>Profit</strong></p>
-                            <p><i class='fa-solid fa-money-check-dollar fa-2xl'></i> 1011001</p>
-                            <span>Profit Amount</span>
-                        </div>
-                    </div>
-                    <div class='col-md-3 p-2'>
-                        <div class='card p-3 text-light bg-warning bg-opacity-75'>
-                            <p><strong>Expenses</strong></p>
-                            <p><i class='fa-solid fa-cart-flatbed-suitcase fa-2xl'></i> 1011001</p>
-                            <span>Expenses Cost</span>
-                        </div>
-                    </div>
-                    <div class='col-md-3 p-2'>
-                        <div class='card p-3 text-light bg-danger bg-opacity-75'>
-                            <p><strong>Gross Profit</strong></p>
-                            <p><i class='fa-solid fa-industry fa-2xl'></i> 1011001</p>
-                            <span>Profit Balance</span>
-                        </div>
-                    </div>
+
+            <div class="">
+                <div class="text-end">
+                    <a href="" class="btn btn-sm btn-dark"><i class="fas fa-plus-circle"></i> Add
+                        Data</a>
+                </div>
+                <hr>
+                <div class="custom-scrollbar-table">
+                    <table id="myTable" class="display">
+                        <thead>
+                            <tr>
+                                <th><span class="">ID</span></th>
+                                <th><span class="pe-5">Name</span></th>
+                                <th><span class="pe-5">Number</span></th>
+                                <th><span class="pe-5">Number</span></th>
+                                <th><span class="pe-5">Number</span></th>
+                                <th><span class="pe-5">Number</span></th>
+                                <th><span class="pe-5">Number</span></th>
+                                <th><span class="pe-5">Number</span></th>
+                                <th><span class="pe-5">Number</span></th>
+
+                                <th><span class="">Status</span></th>
+                                <th><strong class="ps-5">Action</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>111</td>
+                                <td>Hasan</td>
+                                <td>01723629080</td>
+                                <td>01723629080</td>
+                                <td>01723629080</td>
+                                <td>01723629080</td>
+                                <td>01723629080</td>
+                                <td>01723629080</td>
+                                <td>01723629080</td>
+                                <td>active</td>
+                                <td class="icons">
+                                    <a href="" type="button" class="btn view"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="" type="button" class="btn edit"><i class="fa-solid fa-pen"></i></a>
+                                    <a href="" type="button" class="btn delete"
+                                        onclick="return confirm('Are you sure dalete')"><i
+                                            class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-
-            <div class="mt-3">
-                <div class="row">
-                    <div class="col-md-8">
-                        <canvas id="myBarChart"></canvas>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- --------------design part end------------------ -->
         </div>
@@ -321,12 +329,21 @@
 
 
 
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/dataTables.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+
+
+
 
 
 </body>
